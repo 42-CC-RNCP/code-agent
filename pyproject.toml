@@ -1,0 +1,20 @@
+[project]
+name = "code-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lea Yeh", email = "lea.yeh.ml@gmail.com" }
+]
+requires-python = "==3.10"
+dependencies = [
+    "openrouter>=1.1.74",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+code-agent = "code_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
